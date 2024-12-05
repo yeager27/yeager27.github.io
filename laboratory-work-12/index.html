@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<meta charset="utf-8" />
+	<!-- <base href="/"> -->
+
+	<title></title>
+	<meta name="description" content="" />
+
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+	/>
+
+	<link rel="icon" href="images/favicon.png" />
+	<meta property="og:image" content="images/dist/preview.jpg" />
+
+	<link rel="stylesheet" href="css/app.min.css" />
+</head>
+
+	<body>
+		
+
+		<main class="main">
+			<section class="promo">
+				<div class="container promo__container">
+					<div class="promo__top">
+						<h1 class="promo__title">#Система рекомендаций</h1>
+
+						<div class="promo__form">
+							<p class="promo__form-information">
+								Поделитесь своими данными и позвольте нам направить вас к следующему важному шагу.
+							</p>
+							<form action="" class="promo__form-body form">
+								<div class="form__row">
+									<div class="form__input-wrapper">
+										<label class="form__label" for="username">Ваше имя:</label>
+										<input
+											class="form__input"
+											type="text"
+											id="username"
+											placeholder="Введите ваше имя"
+											required
+										/>
+									</div>
+									<div class="form__input-wrapper">
+										<label class="form__label" for="interests">Интересы:</label>
+										<input
+											class="form__input"
+											type="text"
+											id="interests"
+											placeholder="Web Development, и т.д."
+											required
+										/>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input-wrapper">
+										<label class="form__label" for="skills">Скиллы:</label>
+										<input
+											class="form__input"
+											type="text"
+											id="skills"
+											placeholder="HTML, CSS и т.д."
+											required
+										/>
+									</div>
+									<div class="form__input-wrapper">
+										<label class="form__label" for="level">Уровень знаний:</label>
+										<select class="form__input" id="level" required>
+											<option value="Beginner">Начинающий</option>
+											<option value="Intermediate">Средний</option>
+											<option value="Advanced">Продвинутый</option>
+										</select>
+									</div>
+								</div>
+								<button class="form__button" type="submit">Получить рекомендацию</button>
+							</form>
+						</div>
+					</div>
+
+					<div class="promo__bottom">
+						<div class="cards"></div>
+					</div>
+				</div>
+			</section>
+
+			<div class="loader">
+				<p class="loader__text">Загрузка, пожалуйста подождите...</p>
+			</div>
+		</main>
+
+		
+		<script src="https://kit.fontawesome.com/eef4a0b9b6.js" crossorigin="anonymous"></script>
+		<script>
+			const BASE_URL = "https://34db-95-56-25-101.ngrok-free.app";
+		</script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
