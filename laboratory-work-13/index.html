@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	
+	<head>
+	<meta charset="utf-8" />
+	<!-- <base href="/"> -->
+
+	<title>Анализ изображений</title>
+	<meta name="description" content="Анализ изображений моделью YOLOv4 " />
+
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+	/>
+
+	<link rel="icon" href="images/favicon.png" />
+	<meta property="og:image" content="images/dist/preview.jpg" />
+
+	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/app.min.css" />
+</head>
+
+	<body>
+		
+
+		<main class="main">
+			<section class="convertor" id="convertor">
+				<div class="container convertor__container">
+					<h1 class="convertor__heading" data-aos="fade-up"><b>Анализ</b> изображений</h1>
+					<p class="convertor__description" data-aos="fade-up">
+						Добро пожаловать в наш инструмент анализа изображений! Мы используем модель YOLO для обнаружения
+						и классификации объектов на изображениях. Просто загрузите до 5 изображений, и наш инструмент
+						обработает их, выделив объекты с указанием вероятностей. Результаты обработки будут возвращены в
+						виде архива.
+					</p>
+					<div class="upload" data-aos="fade-up">
+						<div class="upload__header">
+							<h3 class="upload__heading">Загрузка файла</h3>
+							<p class="upload__description">
+								Выберите изображения для анализа. Обработка поддерживает форматы JPG, JPEG, PNG,
+								размером до 5 МБ.
+							</p>
+						</div>
+
+						<div class="upload__choose">
+							<div class="upload__details">
+								<i class="fa-solid fa-file-import upload__icon"></i>
+
+								<input
+									type="file"
+									class="upload__input hidden"
+									accept="image/png, image/jpg, image/jpeg"
+									multiple="multiple"
+									hidden
+								/>
+
+								<div class="upload__info">
+									<h3 class="upload__info-title">
+										Выберите одно или несколько изображений для анализа.
+									</h3>
+
+									<span class="upload__info-description">
+										Поддерживаются форматы JPG, JPEG, PNG.<br />
+										Максимальный размер одного файла 5 МБ.
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="upload__items hidden"></div>
+
+						<button class="upload__button disabled" disabled>Отправить на анализ</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		
+		<script>
+			const BASE_URL = "http://localhost:8000";
+		</script>
+		<script src="https://kit.fontawesome.com/0653a69d1e.js" crossorigin="anonymous"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
